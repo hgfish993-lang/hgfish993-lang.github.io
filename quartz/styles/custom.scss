@@ -1,3 +1,23 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+/* Persian / RTL content */
+.popover-hint {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Lists */
+.popover-hint ul,
+.popover-hint ol {
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 0;
+}
+
+/* Keep code blocks left-to-right */
+.popover-hint pre,
+.popover-hint pre code,
+.popover-hint .expressive-code {
+  direction: ltr;
+  text-align: left;
+}
